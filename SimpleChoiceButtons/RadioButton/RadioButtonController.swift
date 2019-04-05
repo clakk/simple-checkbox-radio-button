@@ -6,13 +6,11 @@
 //  Copyright © 2018 Claudio Cecchini. All rights reserved.
 //
 
-import Foundation
-
-class RadioButtonController {
+public class RadioButtonController {
     var radioButtons: [RadioButton] = []
     var isDeselectable = true
     
-    public func updateButtons(sender: RadioButton) {
+    func updateButtons(sender: RadioButton) {
         for radioButton in radioButtons where radioButton.isSelected && radioButton != sender {
             radioButton.isSelected = false
         }

@@ -6,8 +6,7 @@
 //  Copyright © 2018 Claudio Cecchini. All rights reserved.
 //
 
-
-class CheckboxButton: UIButton {
+public class CheckboxButton: UIButton {
     
     override init(frame: CGRect) {
         super.init(frame: frame)

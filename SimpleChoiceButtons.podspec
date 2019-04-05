@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
  s.name             = "SimpleChoiceButtons"
- s.version          = "0.3"
+ s.version          = "0.4"
  s.summary          = "Lightweight radio and checkbox buttons written in Swift."
  s.homepage         = "https://github.com/clakk/simple-choice-buttons"
  s.license          = { :type => "MIT", :file => "LICENSE" }
