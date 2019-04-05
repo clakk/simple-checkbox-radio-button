@@ -9,8 +9,17 @@
 
 class CheckboxButton: UIButton {
     
-    override func draw(_ rect: CGRect) {
-        super.draw(rect)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupAction()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setupAction()
+    }
+    
+    private func setupAction() {
         addTarget(self, action: #selector(setSelected), for: .touchUpInside)
     }
     
